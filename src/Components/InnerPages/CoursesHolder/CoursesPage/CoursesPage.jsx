@@ -23,8 +23,21 @@ const CoursesPage = () => {
 
   const listOfSort = [
     { id: 3, text: "محبوب ترین", sortingCol: "courseRate", sortType: "desc" },
+    { id: 4, text: " نامحبوب ترین", sortingCol: "courseRate", sortType: "asc" },
     { id: 1, text: "گرانترین", sortingCol: "cost", sortType: "desc" },
     { id: 2, text: "ارزان ترین", sortingCol: "cost", sortType: "asc" },
+    {
+      id: 2,
+      text: "آخرین بروز رسانی",
+      sortingCol: "lastUpdate",
+      sortType: "asc",
+    },
+    {
+      id: 2,
+      text: "اولین بروز رسانی",
+      sortingCol: "lastUpdate",
+      sortType: "desc",
+    },
   ];
   return (
     <div className="w-screen">
